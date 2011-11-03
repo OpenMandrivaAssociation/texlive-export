@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/export
+# catalog-date 2007-01-03 21:31:08 +0100
+# catalog-license lppl
+# catalog-version 1.8
 Name:		texlive-export
 Version:	1.8
 Release:	1
@@ -46,6 +52,7 @@ purposes of dvipaste.
 %doc %{_texmfdistdir}/source/latex/export/export.dtx
 %doc %{_texmfdistdir}/source/latex/export/export.ins
 %doc %{_texmfdistdir}/source/latex/export/export.l
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ purposes of dvipaste.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
