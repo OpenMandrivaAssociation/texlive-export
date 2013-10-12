@@ -1,12 +1,12 @@
-# revision 15878
+# revision 27206
 # category Package
 # catalog-ctan /macros/latex/contrib/export
-# catalog-date 2007-01-03 21:31:08 +0100
+# catalog-date 2012-07-11 14:19:50 +0200
 # catalog-license lppl
 # catalog-version 1.8
 Name:		texlive-export
 Version:	1.8
-Release:	2
+Release:	3
 Summary:	Import and export values of LaTeX registers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/export
@@ -20,11 +20,11 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-This package allows the user to export/import the values of
+The package allows the user to export/import the values of
 LaTeX registers (counters, rigid and rubber lengths only). It
-is definitely not for faint-hearted users. The package may be
-used, for example, to communicate between documents for the
-purposes of dvipaste.
+is not for faint-hearted users. The package may be used, for
+example, to communicate between documents for the purposes of
+dvipaste.
 
 %post
     %{_sbindir}/texlive.post
@@ -39,6 +39,7 @@ purposes of dvipaste.
 %{_texmfdistdir}/tex/latex/export/dvipaste.sty
 %{_texmfdistdir}/tex/latex/export/export.sty
 %doc %{_texmfdistdir}/doc/latex/export/00readme
+%doc %{_texmfdistdir}/doc/latex/export/export.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/export/export.dtx
 %doc %{_texmfdistdir}/source/latex/export/export.ins
@@ -53,17 +54,3 @@ purposes of dvipaste.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.8-2
-+ Revision: 751725
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.8-1
-+ Revision: 718400
-- texlive-export
-- texlive-export
-- texlive-export
-- texlive-export
-
