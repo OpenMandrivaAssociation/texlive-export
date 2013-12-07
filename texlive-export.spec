@@ -6,7 +6,7 @@
 # catalog-version 1.8
 Name:		texlive-export
 Version:	1.8
-Release:	3
+Release:	4
 Summary:	Import and export values of LaTeX registers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/export
