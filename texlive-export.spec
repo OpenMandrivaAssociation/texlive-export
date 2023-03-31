@@ -1,6 +1,6 @@
 Name:		texlive-export
 Version:	27206
-Release:	1
+Release:	2
 Summary:	Import and export values of LaTeX registers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/export
