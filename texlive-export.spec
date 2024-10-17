@@ -3,7 +3,7 @@ Version:	27206
 Release:	2
 Summary:	Import and export values of LaTeX registers
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/export
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/export
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/export.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/export.doc.r%{version}.tar.xz
